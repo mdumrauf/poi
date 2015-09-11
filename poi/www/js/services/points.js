@@ -11,7 +11,8 @@ angular.module('poiApp')
           isStarred: false,
           lat: -34.7073194,
           lon: -58.2783103,
-          distance: 0
+          distance: 0,
+          showDistance: function() {return this.distance === 0;}
         },
         {
           title: 'Remises Iberia',
@@ -21,7 +22,8 @@ angular.module('poiApp')
           isStarred: false,
           lat: -34.707828,
           lon: -58.2751557,
-          distance: 0
+          distance: 0,
+          showDistance: function() {return this.distance === 0;}
         },
         {
           title: 'Sanatorio Bernal',
@@ -31,7 +33,8 @@ angular.module('poiApp')
           isStarred: false,
           lat: -34.7091994,
           lon: -58.2821019,
-          distance: 0
+          distance: 0,
+          showDistance: function() {return this.distance === 0;}
         },
       ];
     };
