@@ -1,5 +1,5 @@
 angular.module('poiApp')
-  .controller("DetailsCtrl",['$stateParams',function($stateParams) {
+  .controller("DetailsCtrl", function($scope, $stateParams, PointsService) {
     var id = $stateParams.id;
     function calculateDistance(position) {
       var point = $scope.point;
@@ -24,4 +24,4 @@ angular.module('poiApp')
 
     $scope.point = PointsService.getPois()[id-1];
     navigator.geolocation.getCurrentPosition(calculateDistance, function(error) {console.log(error);});
-}]);
+});
