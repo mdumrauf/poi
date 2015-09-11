@@ -1,0 +1,9 @@
+<ion-view title="Master List">
+  <ion-content>
+    <h1>{{point.title}}</h1>
+    <h2>{{point.shortDescription}}</h2>
+    <p>{{point.longDescription}}</p>
+    <ion-spinner icon="dots" ng-hide='!point.showDistance()'></ion-spinner>
+    <h4 ng-hide='point.showDistance()'>{{point.distance}} km</h4>
+  </ion-content>
+</ion-view>
